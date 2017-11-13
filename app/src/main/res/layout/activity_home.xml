@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.juhwan.pokeflight.ScalableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="missingPrefix"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context="com.example.juhwan.pokeflight.Home"
+    android:background="@drawable/pogo3"
+    sl:scale_base_height="2300"
+    sl:scale_base_width="1900"
+    >
+
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/start"
+        android:text="start"
+        sl:scale_left = "50"
+        sl:scale_top = "2000"
+        sl:scale_width = "450"
+        sl:scale_height = "250"
+        sl:scale_textsize = "50"/>
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button1"
+        android:layout_marginEnd="46dp"
+        android:text="Ranking"
+        android:background="@drawable/ranking"
+        sl:scale_left = "1400"
+        sl:scale_top = "2000"
+        sl:scale_width = "450"
+        sl:scale_height = "250"
+        sl:scale_textsize = "50"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/pokemon"
+        sl:scale_width = "1200"
+        sl:scale_height = "700"
+        sl:scale_left = "360"
+        sl:scale_top = "100" />
+
+
+
+</com.example.juhwan.pokeflight.ScalableLayout>

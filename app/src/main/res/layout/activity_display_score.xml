@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.juhwan.pokeflight.ScalableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:sl="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="missingPrefix"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    sl:scale_base_height="2300"
+    sl:scale_base_width="1900"
+    tools:context="com.example.juhwan.pokeflight.DisplayScore">
+
+
+
+
+        <Button
+            android:id="@+id/buttonUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="edit"
+            android:text="update"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/buttonSave"
+            sl:scale_left = "530"
+            sl:scale_top = "2000"
+            sl:scale_width = "390"
+            sl:scale_height = "250"
+            sl:scale_textsize = "50"/>
+
+        <Button
+            android:id="@+id/buttonDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="delete"
+            android:text="Delete"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            sl:scale_left = "1020"
+            sl:scale_top = "2000"
+            sl:scale_width = "390"
+            sl:scale_height = "250"
+            sl:scale_textsize = "50"/>
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="insert"
+            android:text="Save"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            sl:scale_left = "50"
+            sl:scale_top = "2000"
+            sl:scale_width = "390"
+            sl:scale_height = "250"
+            sl:scale_textsize = "50"/>
+
+        <Button
+            android:id="@+id/buttonDA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/buttonUpdate"
+            android:onClick="deleteAll"
+            android:text="Deleteall"
+            sl:scale_left = "1500"
+            sl:scale_top = "2000"
+            sl:scale_width = "390"
+            sl:scale_height = "250"
+            sl:scale_textsize = "50"/>
+
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="7dp"
+            sl:scale_left = "1000"
+            sl:scale_top = "200"
+            sl:scale_width = "500"
+            sl:scale_height = "250"
+            sl:scale_textsize = "100"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium" />
+
+        <EditText
+        android:id="@+id/editTextScore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewScore"
+        android:layout_alignStart="@+id/editTextName"
+        android:ems="10"
+        android:inputType="number"
+        sl:scale_width = "500"
+        sl:scale_left = "1000"
+        sl:scale_top = "500"
+        sl:scale_height = "250"
+        sl:scale_textsize = "100"
+        android:text="SCORE" />
+
+
+    <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/editTextName"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="24dp"
+            android:text="유저 이름"
+        sl:scale_width = "500"
+        sl:scale_left = "400"
+        sl:scale_top = "280"
+        sl:scale_height = "250"
+        sl:scale_textsize = "100"
+            android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+        <TextView
+            android:id="@+id/textViewScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textViewName"
+            android:layout_below="@+id/textViewName"
+            android:layout_marginTop="43dp"
+            android:text="점 수"
+            sl:scale_width = "500"
+            sl:scale_left = "470"
+            sl:scale_top = "550"
+            sl:scale_height = "250"
+            sl:scale_textsize = "100"
+            android:textAppearance="@android:style/TextAppearance.Material.Large" />
+
+
+
+
+
+
+
+</com.example.juhwan.pokeflight.ScalableLayout>
